@@ -368,14 +368,14 @@ form input{
   }
   
   .card-food-front {
-    background: linear-gradient(90deg, #4CAF50, #8BC34A);
+    background: #3c4635;
     color: #fff;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     height: 100%;
-    border: 10px solid #3c4635;
+    border: 10px solid  #fff;
     border-radius: 10px;
     justify-content: center;
     font-size: 24px;
@@ -386,7 +386,7 @@ form input{
 
 
   .card-food-back {
-    background-color: #e7fce6;
+    background-color: #fff;
     color: #fff;
     display: flex;
     align-items: center;
