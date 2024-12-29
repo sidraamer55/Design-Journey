@@ -368,7 +368,7 @@ form input{
   }
   
   .card-food-front {
-    background: linear-gradient(90deg, #3c4635, #587046);
+    background: linear-gradient(90deg, #4CAF50, #8BC34A);
     color: #fff;
     display: flex;
     flex-direction: column;
