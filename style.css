@@ -18,86 +18,6 @@ html{
 
 
 
-.btn{
-    color:  #808080;
-}
-
-
-/*contact*/
-.contact-info a{
-    color: #ffffff ;
-}
-#contact{
-    padding: 100px 0;
-    background: #353D2F;
-}
-#contact .container1{
-    max-width: 900px;
-}
-#contact .contact-content{
-    display: flex;
-    justify-content:space-evenly ;
-    align-items: center;
-}
-#contact .contact-content .contact-info div {
-    margin: 30px;
-    line-height: 1.7;
-}
-#contact .contact-content .contact-info h3{
-    font-size: 28px;
-    color: #0fa50f;
-    margin-bottom: 10px;
-
-}
-#contact .contact-content .contact-info p{
-    color:#f5f5f5;
-
-}
-#contact .contact-content .contact-info i{
-    margin-right: 5px;
-
-}
-form{
-    width: 50%;
-
-}
-form input{
-    display: block;
-    width: 100%;
-    padding: 20px 15px ;
-    margin: 20px 0;
-}
-#contact .btn {
-    background-color:#047a04;
-    color: white;
-    font-size: 16px;
-    padding: 3px 5px;
-    border-radius: 10px;
-    border: 2px solid transparent;
-    cursor: pointer;
-    
-}
-#contact .btn:hover{
-    background-color: transparent;
-    border-color: #e7fce6;
-    color: #e7fce6;
-}
-
-.fa-brands{
-    padding: 1px 5px ;
-    margin: 20px 0;
-}
-
-.fa-solid{
-    padding: 3px 5px ;
-   }
-
-.fa-regular{
-    padding: 5px 5px ;
-
-}
-
-
 /*=================================
 
 
@@ -244,6 +164,53 @@ form input{
     text-align: center;
     font-size: 15px;
 }
+
+
+@media (max-width: 768px) {
+  .text-overlay {
+      font-size: 0.8rem; /* Smaller font size for mobile */
+  }
+
+  .destinations-heading {
+      font-size: 1.5rem; /* Smaller heading for mobile */
+  }
+
+  .destination-item {
+      flex-direction: column; /* Stack items vertically */
+  }
+
+  .destination-image {
+      width: 50%; /* Full width on mobile */
+  }
+
+  .destination-content {
+      padding: 5px; /* Less padding on mobile */
+  }
+
+  .destination-description {
+      font-size: 0.9rem; /* Smaller text for mobile */
+  }
+}
+
+@media (max-width: 480px) {
+  .text-overlay {
+      font-size: 1rem; /* Even smaller font size for very small screens */
+  }
+
+  .destinations-heading {
+      font-size: 1.2rem; /* Even smaller heading for very small screens */
+  }
+
+  .destination-description {
+      font-size: 0.8rem; /* Smaller text for very small screens */
+  }
+}
+
+
+
+
+
+
 
 
 /*=================================
@@ -422,6 +389,51 @@ form input{
   }
   
   
+  @media (max-width: 768px) {
+    .timeline-intro {
+        font-size: 0.8rem; /* Smaller font size for mobile */
+    }
+
+    .food-container {
+        flex-direction: column; /* Stack items vertically */
+        align-items: center; /* Center items */
+    }
+
+    .card-food {
+        width: 90%; /* Full width on mobile */
+        max-width: 300px; /* Limit max width */
+    }
+
+    .card-food-image {
+        font-size: 1rem; /* Smaller font size for mobile */
+    }
+
+    .card-food-text {
+        font-size: 0.9rem; /* Smaller text for mobile */
+    }
+}
+
+@media (max-width: 480px) {
+    .timeline-intro {
+        font-size: 1.2rem; /* Even smaller font size for very small screens */
+    }
+
+    .card-food {
+        width: 95%; /* Full width on very small screens */
+    }
+
+    .card-food-image {
+        font-size: 0.9rem; /* Smaller font size for very small screens */
+    }
+
+    .card-food-text {
+        font-size: 0.8rem; /* Smaller text for very small screens */
+    }
+}
+
+
+
+
 
 
   /*=================================
@@ -515,7 +527,144 @@ form input{
 
 
 
+@media (max-width: 768px) {
+  .destinations-heading {
+      font-size: 1.5rem; /* Smaller font size for mobile */
+  }
 
+  .card-group {
+      flex-direction: column; /* Stack cards vertically on smaller screens */
+      align-items: center; /* Center cards */
+  }
+
+  .card {
+      width: 90%; /* Full width on mobile */
+      max-width: 400px; /* Limit max width */
+  }
+
+  .card-title {
+      font-size: 1.2rem; /* Smaller title font size for mobile */
+  }
+
+  .card-text {
+      font-size: 0.9rem; /* Smaller text for mobile */
+  }
+}
+
+@media (max-width: 480px) {
+  .destinations-heading {
+      font-size: 1.2rem; /* Even smaller font size for very small screens */
+  }
+
+  .card {
+      width: 95%; /* Full width on very small screens */
+  }
+
+  .card-title {
+      font-size: 1rem; /* Smaller title font size for very small screens */
+  }
+
+  .card-text {
+      font-size: 0.8rem; /* Smaller text for very small screens */
+  }
+}
+
+
+
+
+
+
+
+
+
+
+ /*=================================
+
+
+ CONTACT PAGE 
+
+
+=================================*/
+
+
+.btn{
+  color:  #808080;
+}
+
+
+/*contact*/
+.contact-info a{
+  color: #ffffff ;
+}
+#contact{
+  padding: 100px 0;
+  background: #353D2F;
+}
+#contact .container1{
+  max-width: 900px;
+}
+#contact .contact-content{
+  display: flex;
+  justify-content:space-evenly ;
+  align-items: center;
+}
+#contact .contact-content .contact-info div {
+  margin: 30px;
+  line-height: 1.7;
+}
+#contact .contact-content .contact-info h3{
+  font-size: 28px;
+  color: #0fa50f;
+  margin-bottom: 10px;
+
+}
+#contact .contact-content .contact-info p{
+  color:#f5f5f5;
+
+}
+#contact .contact-content .contact-info i{
+  margin-right: 5px;
+
+}
+form{
+  width: 50%;
+
+}
+form input{
+  display: block;
+  width: 100%;
+  padding: 20px 15px ;
+  margin: 20px 0;
+}
+#contact .btn {
+  background-color:#047a04;
+  color: white;
+  font-size: 16px;
+  padding: 3px 5px;
+  border-radius: 10px;
+  border: 2px solid transparent;
+  cursor: pointer;
+  
+}
+#contact .btn:hover{
+  background-color: transparent;
+  border-color: #e7fce6;
+  color: #e7fce6;
+}
+
+.fa-brands{
+  padding: 1px 5px ;
+  margin: 20px 0;
+}
+
+.fa-solid{
+  padding: 3px 5px ;
+ }
+
+.fa-regular{
+  padding: 5px 5px ;
+
+}
 
 .contact {
   font-family: Arial, sans-serif; /* Sets a clean, modern font */
@@ -529,4 +678,45 @@ form input{
   margin: 20px auto; /* Adds space above and below the paragraph and centers it */
   width: 100%; /* Sets a width for the paragraph */
   text-align: center; /* Centers the text inside the paragraph */
+}
+
+
+
+
+@media (max-width: 768px) {
+  .contact-content {
+      flex-direction: column; /* Stack contact info and form vertically */
+      align-items: center; /* Center items */
+  }
+
+  .contact-info {
+      margin-right: 0; /* Remove right margin on smaller screens */
+      margin-bottom: 20px; /* Add space below contact info */
+  }
+
+  form {
+      width: 100%; /* Full width on mobile */
+  }
+
+  form input {
+      width: 100%; /* Full width for input fields */
+  }
+
+  form button {
+      width: 100%; /* Full width for button */
+  }
+}
+
+@media (max-width: 480px) {
+  .contact {
+      font-size: 1rem; /* Smaller font size for very small screens */
+  }
+
+  form input {
+      padding: 8px; /* Smaller padding for input fields */
+  }
+
+  form button {
+      padding: 8px; /* Smaller padding for button */
+  }
 }
