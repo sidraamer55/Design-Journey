@@ -397,6 +397,14 @@ form input{
     transform: rotateY(180deg);
   }
   
+  .st{
+    color: #3c4635;
+  }
+
+  .st:hover{
+    color: #516444;
+    text-shadow: 0.5px 0.5px #353D2F;
+  }
   
   .card-food-image {
     width: 100%; /* Makes image fill the card's width */
@@ -415,3 +423,110 @@ form input{
   
   
 
+
+  /*=================================
+
+
+ NEWS PAGE 
+
+
+=================================*/
+
+
+/* Card group styles */
+.card-group {
+  display: flex; /* Use Flexbox to arrange cards */
+  justify-content: space-around; /* Space cards evenly */
+  margin: 20px; /* Margin around the card group */
+}
+
+/* General card styles */
+.card {
+  width: 200px; /* Set a fixed width for smaller cards */
+  margin: 10px; /* Add some margin around the cards */
+  border: none; /* Remove default border */
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  overflow: hidden; /* Prevents overflow of content */
+  transition: transform 0.2s, box-shadow 0.2s; /* Smooth transition for hover effect */
+  background-color: #ffffff; /* White background for cards */
+}
+
+/* Card image styles */
+.card-img-top {
+  width: 100%; /* Full width */
+  height: 120px; /* Fixed height for images */
+  object-fit: cover; /* Cover the area without distortion */
+  border-top-left-radius: 10px; /* Rounded corners for the top */
+  border-top-right-radius: 10px; /* Rounded corners for the top */
+}
+
+/* Card body styles */
+.card-body {
+  padding: 15px; /* Increased padding inside the card */
+  background-color: #f8f9fa; /* Light background color */
+}
+
+/* Card title styles */
+.card-title {
+  font-size: 1.2rem; /* Slightly larger font size for title */
+  margin-bottom: 5px; /* Space below title */
+  color: #333; /* Darker text color */
+  font-weight: bold; /* Bold title */
+}
+
+/* Card text styles */
+.card-text {
+  font-size: 0.9rem; /* Slightly larger font size for text */
+  color: #555; /* Slightly lighter text color */
+  line-height: 1.5; /* Improved line height for readability */
+}
+
+/* Muted text styles */
+.text-muted {
+  color: #6c757d; /* Muted color for last updated text */
+}
+
+/* Card footer styles */
+.card-footer {
+  background-color: #f1f1f1; /* Light background for footer */
+  border-top: 1px solid #ddd; /* Light border on top */
+  padding: 10px; /* Padding for footer */
+  text-align: center; /* Center text in footer */
+}
+
+/* Hover effect */
+.card:hover {
+  transform: translateY(-5px); /* Slightly lift the card on hover */
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); /* Increase shadow on hover */
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .card-group {
+      flex-direction: column; /* Stack cards vertically on smaller screens */
+      align-items: center; /* Center cards */
+  }
+  .card {
+      width: 90%; /* Make cards full width on smaller screens */
+  }
+}
+
+
+
+
+
+
+.contact {
+  font-family: Arial, sans-serif; /* Sets a clean, modern font */
+  font-size: 16px; /* Sets a comfortable font size */
+  color: #3f5e43; /* Dark gray text color for readability */
+  background-color: #f9f9f9; /* Light background color for contrast */
+  padding: 15px; /* Adds space inside the paragraph */
+  border: 1px solid #ddd; /* Light border for definition */
+  border-radius: 5px; /* Rounded corners for a softer look */
+  box-shadow: 0 2px 5px rgba(38, 71, 40, 0.1); /* Subtle shadow for depth */
+  margin: 20px auto; /* Adds space above and below the paragraph and centers it */
+  width: 100%; /* Sets a width for the paragraph */
+  text-align: center; /* Centers the text inside the paragraph */
+}
