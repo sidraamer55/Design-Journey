@@ -166,12 +166,10 @@ html{
 }
 
 
-@media only screen and (max-width: 640px) {
-  .styled-word{
-    font-size: smaller;
-  }
+@media (max-width: 700px) {
+  
   .text-overlay {
-      font-size: 10px; /* Smaller font size for mobile */
+      font-size: 5px; /* Smaller font size for mobile */
   }
 
   .destinations-heading {
