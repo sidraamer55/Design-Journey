@@ -16,7 +16,17 @@ html{
     scroll-behavior: smooth;
 }
 
+@media (max-width: 768px) {
+  .lessons-gallery {
+    flex-direction: column;
+    align-items: center;
+  }
 
+  .lessons-item {
+    width: 80%;
+    margin-bottom: 20px;
+  }
+}
 
 /*=================================
 
@@ -83,12 +93,6 @@ html{
   text-align: center;
   padding: 10px;
 }
-/* Set up the initial state of the image */
-.slide-section {
-  width: 100%;
-  overflow: hidden; /* Hide the image when it is off-screen */
-}
-
 
 
 /* Container styling */
@@ -128,8 +132,9 @@ html{
   
   /* Alternating styles for each destination */
   .destination-item:nth-child(even) {
-    flex-direction: row-reverse; /* Reverse image position on even items */
-  }
+    flex-direction: row-reverse; }
+    /* Reverse image position on even items */
+
   
   /* Image styling */
   .destination-image {
@@ -166,14 +171,14 @@ html{
 }
 
 
-@media (max-width: 700px) {
+@media (max-width: 768px) {
   
   .text-overlay {
-      font-size: 5px; /* Smaller font size for mobile */
+      font-size: 0.5rem; /* Smaller font size for mobile */
   }
 
   .destinations-heading {
-      font-size: 1.5rem; /* Smaller heading for mobile */
+      font-size: 0.8rem; /* Smaller heading for mobile */
   }
 
   .destination-item {
@@ -189,26 +194,9 @@ html{
   }
 
   .destination-description {
-      font-size: 0.9rem; /* Smaller text for mobile */
+      font-size: 0.5rem; /* Smaller text for mobile */
   }
 }
-
-@media (max-width: 480px) {
-  .text-overlay {
-      font-size: 0.8rem; /* Even smaller font size for very small screens */
-  }
-
-  .destinations-heading {
-      font-size: 1.2rem; /* Even smaller heading for very small screens */
-  }
-
-  .destination-description {
-      font-size: 0.8rem; /* Smaller text for very small screens */
-  }
-}
-
-
-
 
 
 
@@ -240,74 +228,15 @@ html{
     /* transform: scale(2.05); Slightly enlarge on hover */
     background: linear-gradient(90deg, #8BC34A, #4CAF50);
 }
-
-
-
-.card-welcome {
-    width: 80%;
-    height: 50%;
-    background: #ffffff;
-    position: relative;
-    display: flex;
-    place-content: center;
-    place-items: center;
-    overflow: hidden;
-    border-radius: 20px;
-  }
   
-  .card-welcome h2 {
-    z-index: 1;
-    color: white;
-    font-size: 1.5em;
-    width: 70%;
-    text-align:center;
-    font-family:'Cormorant Garamond', serif;
-  
-  }
-  
-  .card-welcome::before {
-    content: '';
-    position: absolute;
-    width: 100px;
-    background-image: linear-gradient(180deg, #3c4635, #516444);
-    height: 130%;
-    animation: rotBGimg 3s linear infinite;
-    transition: all 0.2s linear;
-  }
-  
-  @keyframes rotBGimg {
-    from {
-      transform: rotate(0deg);
-    }
-  
-    to {
-      transform: rotate(360deg);
-    }
-  }
-  
-  .card-welcome::after {
-    content: '';
-    position: absolute;
-    background: #000000;
-    ;
-    inset: 5px;
-    border-radius: 15px;
-  }  
-  
-  .welcome-container {
-    display: grid;
-    place-items: center; /* Centers both horizontally and vertically */
-    height: 100vh; /* Full viewport height */
-  }
-  
-  .food-container{
+  .lessons-container{
     display: flex;
     flex-wrap: wrap; /* Allow cards to wrap to the next line */
     justify-content: center; /* Center cards horizontally */
     align-items: center; /* Center cards vertically if needed */
     margin: 20px 0; /* Add some margin for spacing */
   }
-  .card-food {
+  .card-lessons {
     margin:20px;
     margin-top:7%;
     width: 300px;
@@ -315,7 +244,7 @@ html{
     perspective: 1000px;
   }
   
-  .card-food-inner {
+  .card-lessons-inner {
     width: 100%;
     height: 100%;
     position: relative;
@@ -323,19 +252,19 @@ html{
     transition: transform 0.999s;
   }
   
-  .card-food:hover .card-food-inner {
+  .card-lessons:hover .card-lessons-inner {
     transform: rotateY(180deg);
   }
   
-  .card-food-front,
-  .card-food-back {
+  .card-lessons-front,
+  .card-lessons-back {
     position: absolute;
     width: 100%;
     height: 100%;
     backface-visibility: hidden;
   }
   
-  .card-food-front {
+  .card-lessons-front {
     background: #3c4635;
     color: #fff;
     display: flex;
@@ -353,7 +282,7 @@ html{
   
 
 
-  .card-food-back {
+  .card-lessons-back {
     background-color: #fff;
     color: #fff;
     display: flex;
@@ -374,7 +303,7 @@ html{
     text-shadow: 0.5px 0.5px #353D2F;
   }
   
-  .card-food-image {
+  .card-lessons-image {
     width: 100%; /* Makes image fill the card's width */
     height: 100%; /* Makes image fill the card's height */
     object-fit: cover; /* Ensures the image maintains its aspect ratio while covering the area */
@@ -383,7 +312,7 @@ html{
     align-items:  center;
   }
   
-  .card-food-text{
+  .card-lessons-text{
     background-color:transparent;
     color:#000;
     text-align: center;
@@ -395,21 +324,21 @@ html{
         font-size: 0.8rem; /* Smaller font size for mobile */
     }
 
-    .food-container {
+    .lessons-container {
         flex-direction: column; /* Stack items vertically */
         align-items: center; /* Center items */
     }
 
-    .card-food {
+    .card-lessons {
         width: 90%; /* Full width on mobile */
         max-width: 300px; /* Limit max width */
     }
 
-    .card-food-image {
+    .card-lessons-image {
         font-size: 1rem; /* Smaller font size for mobile */
     }
 
-    .card-food-text {
+    .card-lessons-text {
         font-size: 0.9rem; /* Smaller text for mobile */
     }
 }
@@ -419,15 +348,15 @@ html{
         font-size: 1.2rem; /* Even smaller font size for very small screens */
     }
 
-    .card-food {
+    .card-lessons {
         width: 95%; /* Full width on very small screens */
     }
 
-    .card-food-image {
+    .card-lessons-image {
         font-size: 0.9rem; /* Smaller font size for very small screens */
     }
 
-    .card-food-text {
+    .card-lessons-text {
         font-size: 0.8rem; /* Smaller text for very small screens */
     }
 }
@@ -513,6 +442,8 @@ html{
   transform: translateY(-5px); /* Slightly lift the card on hover */
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); /* Increase shadow on hover */
 }
+
+
 
 /* Responsive styles */
 @media (max-width: 768px) {
