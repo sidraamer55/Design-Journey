@@ -24,8 +24,8 @@ html{
   position: fixed;
   z-index: 100;
   opacity: 1; 
-  transition: opacity 15s ease;  */
-}
+  transition: opacity 15s ease; 
+}*/
 
 /*=================================
 
@@ -194,6 +194,10 @@ html{
 
   .destination-description {
       font-size: 0.5rem; /* Smaller text for mobile */
+  }
+
+  .full-screen-image-with-text {
+    height: 70vh; /* Full viewport height */
   }
 }
 
