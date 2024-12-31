@@ -16,6 +16,23 @@ window.addEventListener('load', function() {
   });
 
 
-var loader= document.getElementById("preloader");
-window.addEventListener("load", function(){loader.style.display = "none";})
+// var loader= document.getElementById("preloader");
+// window.addEventListener("load", function(){loader.style.display = "none";})
+
+// Show the preloader
+const preloader = document.getElementById('preloader');
+
+// Set the duration for how long you want the preloader to be visible (in milliseconds)
+const preloaderDuration = 20000; // 15 seconds
+
+// Function to hide the preloader
+function hidePreloader() {
+  preloader.style.opacity = '0'; // Start fading out
+  setTimeout(() => {
+    preloader.style.display = 'none'; // Hide it completely after fade out
+  }, 15000); // Match this duration with the transition duration in CSS
+}
+
+// Set a timeout to hide the preloader after the specified duration
+setTimeout(hidePreloader, preloaderDuration);
   
