@@ -167,6 +167,9 @@ html{
 
 
 @media only screen and (max-width: 640px) {
+  .styled-word{
+    font-size: smaller;
+  }
   .text-overlay {
       font-size: 10px; /* Smaller font size for mobile */
   }
