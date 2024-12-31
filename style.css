@@ -166,9 +166,9 @@ html{
 }
 
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 640px) {
   .text-overlay {
-      font-size: 15px; /* Smaller font size for mobile */
+      font-size: 10px; /* Smaller font size for mobile */
   }
 
   .destinations-heading {
