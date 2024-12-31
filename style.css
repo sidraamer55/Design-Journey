@@ -16,15 +16,15 @@ html{
     scroll-behavior: smooth;
 }
 
-#preloader{
+/* #preloader{
   background: #3c4635 url(positive-vibes-happy-meter.gif) no-repeat center center;
   background-size: 100%;
   height: 100%;
   width: 100%;
   position: fixed;
   z-index: 100;
-  opacity: 1; /* Ensure it's fully visible */
-  transition: opacity 15s ease; /* Transition for fading out */
+  opacity: 1; 
+  transition: opacity 15s ease;  */
 }
 
 /*=================================
